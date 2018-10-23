@@ -18,7 +18,11 @@ const CourseDetails = (props) => {
         open,
         description
     } = props;    
+<<<<<<< 35dabda61c986f8bab4fe1bacf844de4b4f61d26
     console.log(props);    
+=======
+
+>>>>>>> TypeChecking & eslint double quotes check
     return (  
         
         <div className="row">
@@ -46,7 +50,11 @@ const CourseDetails = (props) => {
 };
  
 CourseDetails.propTypes = {
+<<<<<<< 35dabda61c986f8bab4fe1bacf844de4b4f61d26
     id: PropTypes.string,
+=======
+    id: PropTypes.number,
+>>>>>>> TypeChecking & eslint double quotes check
     title: PropTypes.string,
     imagePath: PropTypes.string,
     price: PropTypes.object,
