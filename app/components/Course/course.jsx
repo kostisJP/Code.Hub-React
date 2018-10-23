@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import Instructor from "./instructor";
-import CourseDetails from './courseDetails';
+import Instructor from "../instructor";
+import CourseDetails from "../CourseDetails/courseDetails";
+
 
 class Course extends Component {
-  state = {      
-    instructors: []       
-  }
+  constructor() {
+    super();
+    this.state = {      
+      instructors: []       
+    }
+  }  
 
   componentDidMount() {    
     fetch('http://localhost:3000/instructors')
@@ -13,9 +17,9 @@ class Course extends Component {
       .then(instructors=>this.setState({instructors}))
   }
 
-  render() {
+  render() {    
     return (
-      <div>
+      <div>        
         <CourseDetails 
           id="01"
           title="React"
