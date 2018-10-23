@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import Instructor from "../instructor";
 import CourseDetails from "../CourseDetails/courseDetails";
 
@@ -8,13 +8,13 @@ class Course extends Component {
     super();
     this.state = {      
       instructors: []       
-    }
-  }  
+    };
+  }
 
   componentDidMount() {    
-    fetch('http://localhost:3000/instructors')
+    fetch("http://localhost:3000/instructors")
       .then(result=>result.json())
-      .then(instructors=>this.setState({instructors}))
+      .then(instructors=>this.setState({instructors}));
   }
 
   render() {    

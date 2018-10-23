@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { PropTypes } from "prop-types";
 
 const CourseDetails = (props) => {
     const {
@@ -16,7 +17,7 @@ const CourseDetails = (props) => {
         duration,
         open,
         description
-    } = props    
+    } = props;    
 
     return (  
         <div className="row">
@@ -41,6 +42,17 @@ const CourseDetails = (props) => {
             </div>
         </div>
     );
-}
+};
  
+CourseDetails.propTypes = {
+    id: PropTypes.number,
+    title: PropTypes.string,
+    imagePath: PropTypes.string,
+    price: PropTypes.object,
+    dates: PropTypes.object,
+    duration: PropTypes.string,
+    open: PropTypes.bool,
+    description: PropTypes.string
+};
+
 export default CourseDetails;
