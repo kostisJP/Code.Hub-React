@@ -9,11 +9,7 @@ const CourseDetails = (props) => {
         price: {
             normal,
             early_bird
-<<<<<<< 5b06241aa56d5e6fceece0d8e72ffcd499aaafd6
         } = {},
-=======
-        },
->>>>>>> fetch course and save to state
         dates: {
             start_date: startDate,
             end_date: endDate
@@ -22,15 +18,7 @@ const CourseDetails = (props) => {
         open,
         description
     } = props;    
-<<<<<<< 5b06241aa56d5e6fceece0d8e72ffcd499aaafd6
-<<<<<<< 35dabda61c986f8bab4fe1bacf844de4b4f61d26
     console.log(props);    
-=======
-
->>>>>>> TypeChecking & eslint double quotes check
-=======
-    
->>>>>>> fetch course and save to state
     return (  
         
         <div className="row">
@@ -58,15 +46,7 @@ const CourseDetails = (props) => {
 };
  
 CourseDetails.propTypes = {
-<<<<<<< 5b06241aa56d5e6fceece0d8e72ffcd499aaafd6
-<<<<<<< 35dabda61c986f8bab4fe1bacf844de4b4f61d26
     id: PropTypes.string,
-=======
-    id: PropTypes.number,
->>>>>>> TypeChecking & eslint double quotes check
-=======
-    id: PropTypes.string,
->>>>>>> fetch course and save to state
     title: PropTypes.string,
     imagePath: PropTypes.string,
     price: PropTypes.object,
