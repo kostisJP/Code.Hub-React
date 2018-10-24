@@ -9,16 +9,16 @@ const CourseDetails = (props) => {
         price: {
             normal,
             early_bird
-        },
+        } = {},
         dates: {
             start_date: startDate,
             end_date: endDate
-        },
+        } = {},
         duration,
         open,
         description
     } = props;    
-    
+    console.log(props);    
     return (  
         
         <div className="row">

@@ -30,20 +30,11 @@ class Course extends Component {
   }
 
   render() {
-    console.log(this.state.course);        
+    //console.log(this.state.course);        
     return (
       <div>           
-        <CourseDetails 
-          id="01"
-          title={this.state.course.title}
-          imagePath={this.state.course.imagePath}
-          price={{normal:1, early_bird:500}}
-          open={this.state.course.open}
-          duration={this.state.course.duration}
-          //dates={this.state.course.dates} // why undefined ???
-          dates={{"start_date": "2018-09-27", "end_date": "2018-09-28"}}
-          description={this.state.course.description}
-          //{...this.state.course}
+        <CourseDetails           
+          {...this.state.course}
         />
         <h3>Instructors</h3>
         {this.state.instructors.map(instructor=>
