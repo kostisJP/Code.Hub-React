@@ -5,7 +5,7 @@ function App(){
     return (        
         <div>
             {/* <Header title="Code.Hub Dashboard" /> */}
-            <Course />
+            <Course id="01" />
         </div>
     );
 } 

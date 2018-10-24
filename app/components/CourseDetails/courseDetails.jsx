@@ -7,19 +7,20 @@ const CourseDetails = (props) => {
         title,
         imagePath,
         price: {
-            normal: normal,
-            early_bird: earlybird
-        },
+            normal,
+            early_bird
+        } = {},
         dates: {
             start_date: startDate,
             end_date: endDate
-        },
+        } = {},
         duration,
         open,
         description
     } = props;    
-
+    console.log(props);    
     return (  
+        
         <div className="row">
             <div className="col-md-12">
                 <h2>{title} <span style={{color: "grey", fontSize: 16}}>({id})</span></h2>
@@ -45,7 +46,7 @@ const CourseDetails = (props) => {
 };
  
 CourseDetails.propTypes = {
-    id: PropTypes.number,
+    id: PropTypes.string,
     title: PropTypes.string,
     imagePath: PropTypes.string,
     price: PropTypes.object,
