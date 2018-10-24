@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Instructor from "../instructor";
+import Instructor from "../Instructor/instructor";
 import CourseDetails from "../CourseDetails/courseDetails";
 
 
