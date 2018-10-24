@@ -1,7 +1,7 @@
 import React from "react";
 import {Table,Button, Panel} from 'react-bootstrap';
-import CourseTableRow from './CourseTableRow';
-import "../courseTable.css";
+import CourseTableRow from '../CourseTableRow/courseTableRow';
+import "../../courseTable.css";
 
 const CourseTable = ({title, courses}) => {
     

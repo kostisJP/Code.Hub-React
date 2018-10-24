@@ -1,10 +1,10 @@
 import React from "react";
 import axios from 'axios';
 import {Row, Col} from "react-bootstrap";
-import Hero from "./Hero";
-import StatItem from "./StatItem";
-import Header from "./Header";
-import CourseTable from "./CourseTable";
+import Hero from "../Hero/hero";
+import StatItem from "../StatItem/statItem";
+import Header from "../Header/header";
+import CourseTable from "../CourseTable/courseTable";
 
 
 class Dashboard extends React.Component{
