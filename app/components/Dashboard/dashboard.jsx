@@ -15,7 +15,7 @@ class Dashboard extends React.Component{
       subtitle:"Manage everything and have fun!",
       courses:[],
       stats:[]
-    }
+    };
   }
 
   componentDidMount(){
@@ -44,7 +44,7 @@ class Dashboard extends React.Component{
       <div className="row">
              <div className="col-md-10 col-md-offset-1">
                 {this.state.stats.map((item,index)=>{
-                  return <StatItem key={item.id} title={this.capitalizeText(item.title)} count={item.amount}/>
+                  return <StatItem key={item.id} title={this.capitalizeText(item.title)} count={item.amount}/>;
                 })}
              </div>
         </div>

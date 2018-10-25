@@ -16,18 +16,7 @@
     "plugins": ["react"],
     "rules": {          
         "semi": ["error", "always"],
-        "linebreak-style": ["error", "unix"],
-<<<<<<< 5b06241aa56d5e6fceece0d8e72ffcd499aaafd6
-<<<<<<< 35dabda61c986f8bab4fe1bacf844de4b4f61d26
-        "quotes": ["error", "double"],
-        "no-console": "off"
-=======
-        "quotes": ["error", "double"]    
->>>>>>> TypeChecking & eslint double quotes check
-=======
-        "quotes": ["error", "double"],
-        "no-console": "off"
->>>>>>> fetch course and save to state
+        "linebreak-style": ["error", "unix"] 
     },
     "settings": {
         "react": {
