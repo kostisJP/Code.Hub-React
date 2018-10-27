@@ -1,9 +1,9 @@
 import React from "react";
 import { getAllCourses, getDashboardStats } from '../../api/calls';
-import Hero from "../Hero/Hero";
-import StatItem from "../StatItem/StatItem";
-import CourseTable from "../CourseTable/courseTable";
 import "./Dashboard.css";
+import CourseTable from '../../Components/CourseTable/CourseTable';
+import StatItem from '../../Components/StatItem/StatItem';
+import Hero from '../../Components/Hero/Hero';
 
 
 class Dashboard extends React.Component{

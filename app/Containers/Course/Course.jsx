@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { getAllCourses, getInstructors } from '../../api/calls';
-import CourseDetails from '../../components/CourseDetails/courseDetails';
-import Instructor from '../../components/Instructor/instructor';
+import CourseDetails from '../../Components/CourseDetails/CourseDetails';
+import Instructor from '../../Components/Instructor/Instructor';
 import "./Course.css";
 
 
