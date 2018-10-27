@@ -1,6 +1,9 @@
 import React from 'react';
 import {Navbar, Nav,NavItem,Row,Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import "./Header.css";
+
+
 const Header = ()=>{
     return (
         <Navbar>
