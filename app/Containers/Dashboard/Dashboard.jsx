@@ -39,7 +39,7 @@ class Dashboard extends React.Component{
     return (
         
       <div>
-      <Header/>
+      {/* <Header/> */}
         <Hero supertitle={this.state.supertitle} subtitle={this.state.subtitle}/>
       <div className="row">
              <div className="col-md-10 col-md-offset-1">
