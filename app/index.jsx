@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./app.css";
-import Dashboard from "./components/Dashboard/dashboard";
+import Dashboard from './Containers/Dashboard/dashboard';
+import Course from './Containers/Course/course';
 
 ReactDOM.render(
-  <Dashboard/>,
+  <Course id="01"/>,
   document.getElementById("app")
 );

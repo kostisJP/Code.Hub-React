@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Instructor from "../Instructor/Instructor";
-import CourseDetails from "../CourseDetails/CourseDetails";
+import { getAllCourses, getInstructors } from '../../api/calls';
+import CourseDetails from '../../components/CourseDetails/courseDetails';
+import Instructor from '../../components/Instructor/instructor';
 
 
 class Course extends Component {
@@ -14,14 +15,10 @@ class Course extends Component {
     this.id = props.id;
   }
 
-  componentDidMount() {      
-    fetch("http://localhost:3000/courses")
-     .then(result=>result.json())
-     .then(courses=>this.getCourseById(courses, this.props.id));  
-
-    fetch("http://localhost:3000/instructors")
-      .then(result=>result.json())
-      .then(instructors=>this.setState({instructors}));          
+  componentDidMount() {  
+    //TODO: Make call for specific course
+    getAllCourses().then(courses => this.getCourseById(courses, this.props.id)); 
+    getInstructors().then(instructors=>this.setState({instructors}));      
   }
 
   getCourseById(courses){    
@@ -29,8 +26,7 @@ class Course extends Component {
     this.setState({course: course[0]});    
   }
 
-  render() {
-    //console.log(this.state.course);        
+  render() {         
     return (
       <div>           
         <CourseDetails           

@@ -1,10 +1,9 @@
 import React from "react";
-import axios from 'axios';
-import {Row, Col} from "react-bootstrap";
-import Hero from "../Hero/Hero";
-import StatItem from "../StatItem/StatItem";
-import Header from "../Header/Header";
-import CourseTable from "../CourseTable/courseTable";
+import { getAllCourses, getDashboardStats } from '../../api/calls';
+import Header from '../../components/Header/header';
+import Hero from '../../components/Hero/hero';
+import StatItem from '../../components/StatItem/statItem';
+import CourseTable from '../../components/CourseTable/courseTable';
 
 
 class Dashboard extends React.Component{
@@ -18,17 +17,9 @@ class Dashboard extends React.Component{
     };
   }
 
-  componentDidMount(){
-      axios.get('http://localhost:3000/courses').then(response=>{
-        const courseData = response.data;
-        this.setState({courses:courseData});
-        //console.log(this.state.courses);
-      });
-      axios.get('http://localhost:3000/stats').then(response=>{
-        const stats = response.data;
-        this.setState({stats:stats});
-        //console.log(this.state.stats);
-      });
+  componentDidMount(){    
+      getAllCourses().then(data => this.setState({courses: data}));
+      getDashboardStats().then(data => this.setState({stats: data}));      
   }
 
   capitalizeText = (str)=>{

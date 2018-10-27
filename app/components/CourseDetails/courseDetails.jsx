@@ -18,7 +18,7 @@ const CourseDetails = (props) => {
         open,
         description
     } = props;    
-    console.log(props);    
+     
     return (  
         
         <div className="row">
