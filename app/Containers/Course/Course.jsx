@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Instructor from "../Instructor/instructor";
-import CourseDetails from "../CourseDetails/courseDetails";
+import Instructor from "../Instructor/Instructor";
+import CourseDetails from "../CourseDetails/CourseDetails";
 
 
 class Course extends Component {

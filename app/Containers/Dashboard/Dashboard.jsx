@@ -1,9 +1,9 @@
 import React from "react";
 import axios from 'axios';
 import {Row, Col} from "react-bootstrap";
-import Hero from "../Hero/hero";
-import StatItem from "../StatItem/statItem";
-import Header from "../Header/header";
+import Hero from "../Hero/Hero";
+import StatItem from "../StatItem/StatItem";
+import Header from "../Header/Header";
 import CourseTable from "../CourseTable/courseTable";
 
 
