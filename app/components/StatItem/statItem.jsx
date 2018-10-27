@@ -1,6 +1,6 @@
 import React from "react";
 import {Badge,Panel,Col} from "react-bootstrap";
-import '../../statItem.css';
+import './StatItem.css';
 
 const StatItem = (props) => {
   return (

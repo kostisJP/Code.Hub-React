@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button} from 'react-bootstrap';
+import "./CourseTableRow.css";
 
 const CourseTableRow = ({row}) =>{
     const startDateFormatted = new Date(row.dates.start_date).toLocaleDateString("el-gr");

@@ -1,9 +1,9 @@
 import React from "react";
 import { getAllCourses, getDashboardStats } from '../../api/calls';
-import Header from '../../components/Header/header';
-import Hero from '../../components/Hero/hero';
-import StatItem from '../../components/StatItem/statItem';
-import CourseTable from '../../components/CourseTable/courseTable';
+import Hero from "../Hero/Hero";
+import StatItem from "../StatItem/StatItem";
+import CourseTable from "../CourseTable/courseTable";
+import "./Dashboard.css";
 
 
 class Dashboard extends React.Component{
@@ -30,7 +30,7 @@ class Dashboard extends React.Component{
     return (
         
       <div>
-      <Header/>
+      {/* <Header/> */}
         <Hero supertitle={this.state.supertitle} subtitle={this.state.subtitle}/>
       <div className="row">
              <div className="col-md-10 col-md-offset-1">

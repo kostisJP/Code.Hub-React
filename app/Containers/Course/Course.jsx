@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { getAllCourses, getInstructors } from '../../api/calls';
 import CourseDetails from '../../components/CourseDetails/courseDetails';
 import Instructor from '../../components/Instructor/instructor';
+import "./Course.css";
 
 
 class Course extends Component {
