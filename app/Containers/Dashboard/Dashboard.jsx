@@ -5,6 +5,7 @@ import Hero from "../Hero/Hero";
 import StatItem from "../StatItem/StatItem";
 import Header from "../Header/Header";
 import CourseTable from "../CourseTable/courseTable";
+import "./Dashboard.css";
 
 
 class Dashboard extends React.Component{

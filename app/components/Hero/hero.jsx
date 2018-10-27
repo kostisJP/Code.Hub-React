@@ -1,6 +1,6 @@
 import React from "react";
 import {Jumbotron,Row,Col} from "react-bootstrap";
-import '../../hero.css';
+import './Hero.css';
 
 const Hero = (props) => {
   return(
