@@ -12,6 +12,13 @@ export const getInstructors = () => getData("/instructors");
 export const getCourseById = (id) => getData(`/courses/${id}`);
 
 export const getCourseInstructors = (instructorId) => {
-  return getData("/instructors")
-    .then(instructors => instructors.filter(instructor => instructor.id == instructorId));
+  return getData("/instructors").then(instructors => {   
+    let courseInstructors = [];
+
+    instructorId.forEach(id => {      
+      courseInstructors.push(instructors.filter(instructor => instructor.id == id)[0]);
+    });
+
+    return courseInstructors;
+  });  
 };

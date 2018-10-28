@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getInstructors, getCourseById, getCourseInstructors } from '../../api/calls';
+import { getCourseById, getCourseInstructors } from '../../api/calls';
 import CourseDetails from '../../Components/CourseDetails/CourseDetails';
 import Instructor from '../../Components/Instructor/Instructor';
 import "./Course.css";
@@ -13,22 +13,22 @@ class Course extends Component {
       instructors: []
     };
 
-    this.id = props.id;
+    this.id = props.match.params.id;
   }
 
-  componentDidMount() {      
+  componentDidMount() {
     getCourseById(this.id).then(course => { 
-        this.setState({course});
+        this.setState({course});        
         return course;
       })  
-      .then(course => {              
-        getCourseInstructors(course.instructors).then(instructors=>this.setState({instructors}));
-      });    
+      .then(course =>              
+        getCourseInstructors(course.instructors).then(instructors => this.setState({instructors}))
+      );    
   }
 
   render() {             
     return (
-      <div>           
+      <div>               
         <CourseDetails           
           {...this.state.course}
         />

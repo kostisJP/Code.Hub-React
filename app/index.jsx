@@ -13,10 +13,9 @@ import {Grid} from 'react-bootstrap';
 ReactDOM.render(
   <BrowserRouter>
     <>
-      <Header />
-      <Course id="02" />      
+      <Header />          
       <Grid>
-      {/* <Route exact path="/" component={Dashboard} /> */}
+      <Route exact path="/" component={Dashboard} />
       <Route exact path="/courses" component={Courses} />
       <Route exact path="/courses/:id" component={Course} />
       <Route exact path="/add-course" component={AddNewCourse} />
