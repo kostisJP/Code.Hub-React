@@ -18,5 +18,5 @@ const CourseTableRow = ({row}) =>{
             <td><Button bsSize="xsmall" bsStyle="info">View Details</Button></td>
         </tr>
     );
-}
+};
 export default CourseTableRow;

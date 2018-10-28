@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getAllCourses, getInstructors } from '../../api/calls';
+import { getInstructors, getCourseById, getCourseInstructors } from '../../api/calls';
 import CourseDetails from '../../Components/CourseDetails/CourseDetails';
 import Instructor from '../../Components/Instructor/Instructor';
 import "./Course.css";
@@ -16,18 +16,17 @@ class Course extends Component {
     this.id = props.id;
   }
 
-  componentDidMount() {  
-    //TODO: Make call for specific course
-    getAllCourses().then(courses => this.getCourseById(courses, this.props.id)); 
-    getInstructors().then(instructors=>this.setState({instructors}));      
+  componentDidMount() {      
+    getCourseById(this.id).then(course => { 
+        this.setState({course});
+        return course;
+      })  
+      .then(course => {              
+        getCourseInstructors(course.instructors).then(instructors=>this.setState({instructors}));
+      });    
   }
 
-  getCourseById(courses){    
-    const course = courses.filter(course=>{ return course.id == this.id; });     
-    this.setState({course: course[0]});    
-  }
-
-  render() {         
+  render() {             
     return (
       <div>           
         <CourseDetails           

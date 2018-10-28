@@ -13,8 +13,8 @@ ReactDOM.render(
   <BrowserRouter>
     <>
       <Header />
-      <Dashboard />
-      <Route exact path="/" component={Dashboard} />
+      <Course id="02" />
+      {/* <Route exact path="/" component={Dashboard} /> */}
       <Route exact path="/courses" component={Courses} />
       <Route exact path="/courses/:id" component={Course} />
       <Route exact path="/add-course" component={AddNewCourse} />

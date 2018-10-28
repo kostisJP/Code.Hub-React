@@ -27,5 +27,5 @@ const Header = ()=>{
             </Row>
     </Navbar>
     );
-}
+};
 export default Header;

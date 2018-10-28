@@ -9,3 +9,9 @@ export const getData = path => {
 export const getAllCourses = () => getData("/courses");
 export const getDashboardStats = () => getData("/stats");
 export const getInstructors = () => getData("/instructors");
+export const getCourseById = (id) => getData(`/courses/${id}`);
+
+export const getCourseInstructors = (instructorId) => {
+  return getData("/instructors")
+    .then(instructors => instructors.filter(instructor => instructor.id == instructorId));
+};
