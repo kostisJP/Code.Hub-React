@@ -8,18 +8,21 @@ import AddNewCourse from "./Containers/AddNewCourse/AddNewCourse";
 import NotFound from "./Components/NotFound/NotFound";
 import Header from "./components/Header/Header";
 import { BrowserRouter, Route } from "react-router-dom";
+import {Grid} from 'react-bootstrap';
 
 ReactDOM.render(
   <BrowserRouter>
     <>
       <Header />
-      <Course id="02" />
+      <Course id="02" />      
+      <Grid>
       {/* <Route exact path="/" component={Dashboard} /> */}
       <Route exact path="/courses" component={Courses} />
       <Route exact path="/courses/:id" component={Course} />
       <Route exact path="/add-course" component={AddNewCourse} />
       <Route path="*" component={NotFound} />
-    </>
+        </Grid>
+     </>
   </BrowserRouter>,
   document.getElementById("app")
 );
