@@ -1,31 +1,31 @@
 import React from 'react';
-import {Navbar, Nav,NavItem,Row,Col} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+import { Navbar, Nav, NavItem, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import "./Header.css";
 
 
-const Header = ()=>{
+const Header = () => {
     return (
         <Navbar>
             <Row>
                 <Col xs={12}>
-                <Navbar.Header>
-                <Navbar.Brand>
-                <Link to="/" className="navbar-item brand-text">Code.Hub Dashboard</Link>
-                    </Navbar.Brand>
-                    <Navbar.Toggle/>
-                </Navbar.Header>
-                <Navbar.Collapse>
-                <Nav>
-                <NavItem to="/add-course" href="/add-course">Courses</NavItem> 
-                </Nav>
-                <Nav pullRight>
-                <NavItem>Add new course</NavItem>
-                </Nav>
-                    </Navbar.Collapse>    
+                    <Navbar.Header>
+                        <Navbar.Brand>
+                            <Link to="/" className="navbar-item brand-text">Code.Hub Dashboard</Link>
+                        </Navbar.Brand>
+                        <Navbar.Toggle />
+                    </Navbar.Header>
+                    <Navbar.Collapse>
+                        <Nav>
+                            <NavItem componentClass={Link} to="/courses">Courses</NavItem>
+                        </Nav> 
+                        <Nav pullRight>
+                            <NavItem componentClass={Link} to="/add-course">Add New Course</NavItem>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Col>
             </Row>
-    </Navbar>
+        </Navbar>
     );
 }
 export default Header;
