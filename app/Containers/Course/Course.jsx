@@ -1,13 +1,7 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
 import { getInstructors, getCourseById, getCourseInstructors } from '../../api/calls';
 import CourseDetails from '../../Components/CourseDetails/CourseDetails';
 import Instructor from '../../Components/Instructor/Instructor';
-=======
-import { getAllCourses, getInstructors } from '../../api/calls';
-import CourseDetails from '../../components/CourseDetails/CourseDetails';
-import Instructor from '../../components/Instructor/Instructor';
->>>>>>> 80441ecb5a1bfca39e0793a780a11af61b73601c
 import "./Course.css";
 
 
