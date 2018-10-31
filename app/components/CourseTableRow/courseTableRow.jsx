@@ -15,7 +15,11 @@ const CourseTableRow = ({row}) =>{
             <td>{bookable ? "✔" : "x"}</td>
             <td>{price} €</td>
             <td>{startDateFormatted} - {endDateFormatted}</td>
-            <td><Button bsSize="xsmall" bsStyle="info">View Details</Button></td>
+            <td>
+                <Button bsSize="xsmall" bsStyle="info" href={`/courses/${row.id}`}>
+                    View Details
+                </Button>
+            </td>
         </tr>
     );
 };
