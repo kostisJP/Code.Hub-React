@@ -17,10 +17,10 @@ const Header = () => {
                     </Navbar.Header>
                     <Navbar.Collapse>
                         <Nav>
-                            <NavItem componentClass={Link} to="/courses">Courses</NavItem>
+                            <NavItem href="/courses">Courses</NavItem>
                         </Nav> 
                         <Nav pullRight>
-                            <NavItem componentClass={Link} to="/add-course">Add New Course</NavItem>
+                            <NavItem href="/add-course">Add New Course</NavItem>
                         </Nav>
                     </Navbar.Collapse>
                 </Col>
