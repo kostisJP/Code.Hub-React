@@ -7,21 +7,23 @@ import Course from "./Containers/Course/Course";
 import AddNewCourse from "./Containers/AddNewCourse/AddNewCourse";
 import NotFound from "./Components/NotFound/NotFound";
 import Header from "./components/Header/Header";
-import { BrowserRouter, Route } from "react-router-dom";
-import {Grid} from 'react-bootstrap';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Grid } from "react-bootstrap";
 
 ReactDOM.render(
   <BrowserRouter>
     <>
-      <Header />          
+      <Header />
       <Grid>
-      <Route exact path="/" component={Dashboard} />
-      <Route exact path="/courses" component={Courses} />
-      <Route exact path="/courses/:id" component={Course} />
-      <Route exact path="/add-course" component={AddNewCourse} />
-      <Route path="*" component={NotFound} />
+        <Switch>
+          <Route exact path="/" component={Dashboard} />
+          <Route exact path="/courses" component={Courses} />
+          <Route exact path="/courses/:id" component={Course} />
+          <Route exact path="/add-course" component={AddNewCourse} />
+          <Route path="*" component={NotFound} />
+        </Switch>
       </Grid>
-     </>
+    </>
   </BrowserRouter>,
   document.getElementById("app")
 );
