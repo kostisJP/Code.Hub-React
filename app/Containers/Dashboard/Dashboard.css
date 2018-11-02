@@ -1,0 +1,12 @@
+.stat_wrapper {
+    padding: 16px 0;
+    background: var(--code-grad-black);
+    border-radius: 104px;
+    box-sizing: border-box;
+    box-shadow: 0 12px 28px 3px var(--btn-shadow-subtle), inset 0 2px 8px 0 var(--btn-shadow-inner);
+    transform: translateY(-50%);
+    border: 8px solid var(--code-black-3);
+    text-align: center;
+    justify-content: space-around;
+    position: relative;
+}

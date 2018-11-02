@@ -1,13 +1,117 @@
-body, h1, h2, h3, h4, h5, h6{
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+:root {
+    --code-black: #1E1D24;
+    --code-black-2: hsla(0, 0%, 22%, 0.8);
+    --code-black-3: #201f24;
+    --code-gray: #27272B;
+    --code-purple: #3A3048;
+    --code-studio: #863FA9;
+    --code-border: rgba(255, 255, 255, 0.24);
+    --code-border-full: rgba(255, 255, 255, 1);
+    --code-text: white;
+    --code-grad-black: linear-gradient(90deg, var(--code-black) 0%, var(--code-black-2) 100%);
+    --btn-radius: 8px;
+    --btn-shadow: rgba(0, 0, 0, 0.76);
+    --btn-shadow-subtle: rgba(0, 0, 0, 0.26);
+    --btn-shadow-inner:  rgba(88,88,88,0.20);
+    --default-transition: 0.4s ease;
 }
 
-html, body, .container{
-    height:100%;
+@font-face {
+    font-family: codeHubFont;
+    src: url(./assets/fonts/aurulentsans-regular.otf);
 }
-.row{
-    margin-bottom:30px;
+
+body,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: var(--code-text);
 }
-table tbody tr td:nth-child(6){
+
+body {
+    background-color: var(--code-black);
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--code-text);
+}
+
+h1 {
+    font-size: 1.9em;
+    color: var(--code-text);
+}
+
+h2 {
+    font-size: 1.7em;
+    color: var(--code-text);
+}
+
+html,
+body,
+.container {
+    height: 100%;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+table tbody tr td:nth-child(6) {
     float: right;
+}
+
+a {
+    text-decoration: none;
+    color: var(--code-text);
+}
+
+li {
+    list-style: none;
+    color: var(--code-text);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.flex_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner_wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 14px 26px;
+    border-radius: var(--btn-radius);
+    border: 2px solid var(--code-border);
+    box-sizing: border-box;
+    transition: border-color var(--default-transition);
+}
+
+.btn:hover {
+    border-color: var(--code-border-full);
+    cursor: pointer;
+}
+
+.btn-float {
+    box-shadow: 0 6px 26px 0 var(--btn-shadow);
+    border: none;
+    transition: transform var(--default-transition), box-shadow var(--default-transition);
+}
+
+.btn-float:hover {
+    transform: translateX(6px);
+    box-shadow: 0 0px 6px var(--btn-shadow);
 }

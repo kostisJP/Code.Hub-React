@@ -1,0 +1,28 @@
+
+.nav_wrapper {
+    background: var(--code-grad-black);
+}
+
+.nav_bar_logo {
+    font-family: codeHubFont;
+    font-size: 1.8em;
+}
+
+.nav_bar_logo span {
+    /* font-family: "Roboto", Arial, Helvetica, sans-serif; */
+    opacity: 0.3;
+    font-weight: 900;
+    font-size: 0.4em;
+    position: relative;
+    top: 19px;
+    left: -130px;
+}
+
+.nav_wrapper .btn {
+    margin-right: 20px;
+}
+
+.logo {
+    transform: scale(0.7);
+    margin-right: 8px;
+}

@@ -14,8 +14,7 @@ module.exports = {
     publicPath: "/"
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: [/\.js$/, /\.jsx$/, /\.css.js$/],
         exclude: /node_modules/,
         use: {
@@ -24,9 +23,25 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        use: [{
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader"
+          }
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {}
+        }]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" }
+          'file-loader'
         ]
       }
     ]

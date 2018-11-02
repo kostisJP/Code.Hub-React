@@ -1,17 +1,14 @@
 import React from "react";
-import {Jumbotron,Row,Col} from "react-bootstrap";
 import './Hero.css';
 
 const Hero = (props) => {
-  return(
-    <Row>
-      <Col xs={12}>
-        <Jumbotron>
-          <h2>{props.supertitle}</h2>
-          <p>{props.subtitle}</p>
-          </Jumbotron>
-      </Col>
-      </Row>
-  );
+return(
+<div className="jumbotron">
+  <div class="inner_wrapper">
+    <h2>{props.supertitle}</h2>
+    <p>{props.subtitle}</p>
+  </div>
+</div>
+);
 };
 export default Hero;

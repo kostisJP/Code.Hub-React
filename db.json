@@ -3,22 +3,26 @@
     {
       "id": "01",
       "title": "students",
-      "amount": 1537
+      "amount": 1537,
+      "picture" : "students"
     },
     {
       "id": "02",
       "title": "courses",
-      "amount": 24
+      "amount": 24,
+      "picture" : "courses"
     },
     {
       "id": "03",
       "title": "instructors",
-      "amount": 36
+      "amount": 36,
+      "picture" : "instructors"
     },
     {
       "id": "04",
       "title": "events",
-      "amount": 158
+      "amount": 158,
+      "picture" : "events"
     }
   ],
   "courses": [

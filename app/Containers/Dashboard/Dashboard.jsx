@@ -31,13 +31,11 @@ class Dashboard extends React.Component {
 
       <div>
         <Hero supertitle={this.state.supertitle} subtitle={this.state.subtitle} />
-        <div className="row">
-          <div className="col-md-10 col-md-offset-1">
+          <div className="stat_wrapper flex_wrapper inner_wrapper">
             {this.state.stats.map((item, index) => {
-              return <StatItem key={item.id} title={this.capitalizeText(item.title)} count={item.amount} />;
+              return <StatItem key={item.id} title={this.capitalizeText(item.title)} count={item.amount} image={item.picture} />;
             })}
           </div>
-        </div>
         <CourseTable title="Last 5 Courses" courses={this.state.courses} />
       </div>
     );

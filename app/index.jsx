@@ -20,7 +20,7 @@ ReactDOM.render(
       <Route exact path="/courses/:id" component={Course} />
       <Route exact path="/add-course" component={AddNewCourse} />
       <Route path="*" component={NotFound} />
-        </Grid>
+      </Grid>
      </>
   </BrowserRouter>,
   document.getElementById("app")

@@ -1,17 +1,14 @@
 import React from "react";
-import {Badge,Panel,Col} from "react-bootstrap";
 import './StatItem.css';
+import Student from "../../assets/icons/students.svg";
 
 const StatItem = (props) => {
-  return (
-    <div>
-      <Panel>
-        <Panel.Body>
-        {props.title}:<Badge>{props.count}</Badge>
-        </Panel.Body>
-        </Panel>
-      
-    </div>
-  );
+return (
+  <div className="relative_wrapper">
+    <div className={'stat_ic stat_ic_'+props.image}></div>
+    <h5 className="stat_header">{props.title}</h5> 
+    <span className="stat_numbers">{props.count}</span>
+  </div>
+);
 };
 export default StatItem;
