@@ -1,6 +1,5 @@
 import React from "react";
 import './StatItem.css';
-import Student from "../../assets/icons/students.svg";
 
 const StatItem = (props) => {
 return (
