@@ -4,7 +4,7 @@ import './Hero.css';
 const Hero = (props) => {
 return(
 <div className="jumbotron">
-  <div class="inner_wrapper">
+  <div className="inner_wrapper">
     <h2>{props.supertitle}</h2>
     <p>{props.subtitle}</p>
   </div>
