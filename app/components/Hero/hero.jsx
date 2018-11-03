@@ -1,14 +1,24 @@
 import React from "react";
-import './Hero.css';
+import "./Hero.css";
+import { PropTypes } from 'prop-types';
 
-const Hero = (props) => {
-return(
-<div className="jumbotron">
-  <div className="inner_wrapper">
-    <h2>{props.supertitle}</h2>
-    <p>{props.subtitle}</p>
-  </div>
-</div>
-);
+const Hero = props => {
+
+  const { supertitle, subtitle } = props;
+
+  return (
+    <div className="jumbotron">
+      <div className="inner_wrapper">
+        <h2>{supertitle}</h2>
+        <p>{subtitle}</p>
+      </div>
+    </div>
+  );
 };
+
+Hero.propTypes = {
+  supertitle: PropTypes.string,
+  subtitle: PropTypes.string
+};
+
 export default Hero;
