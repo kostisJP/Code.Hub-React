@@ -1,20 +1,58 @@
-:root {
-    --code-black: #1E1D24;
-    --code-black-2: hsla(0, 0%, 22%, 0.8);
-    --code-black-3: #201f24;
-    --code-gray: #27272B;
-    --code-purple: #3A3048;
-    --code-studio: #863FA9;
-    --code-border: rgba(255, 255, 255, 0.24);
-    --code-border-full: rgba(255, 255, 255, 1);
-    --code-text: white;
+/* :root {
+    --code-black: hsl(0, 0%, calc(var(--lightness-change) + 13%));
+    --code-black-2: hsla(0, 0%, calc(var(--lightness-change) + 22%), 0.8);
+    --code-black-3: hsl(0, 0%, calc(var(--lightness-change) + 13%));
+    --code-gray: hsl(0, 0%, calc(var(--lightness-change) + 16%));
+    --code-purple: hsl(265, 20%, 24%);
+    --code-studio: hsl(280, 46%, 45%);
+    --code-border: hsla(0, 0%, calc(var(--lightness-change) + 100%), 0.24);
+    --code-light-bg: hsla(0, 0%, calc(var(--lightness-change) + 100%, 0.04));
+    --code-border-full: hsl(0, 0%, calc(var(--lightness-change) + 100%));
+    --code-text: hsl(0, 0%, 100% );
+    --btn-shadow: hsla(0, 0%, calc(var(--lightness-change) + 0%, 0.76));
+    --btn-shadow-subtle: hsla(0, 0%, 0%, 0.26);
+    --btn-shadow-inner:  hsla(0, 0%, 35%, 0.2);
     --code-grad-black: linear-gradient(90deg, var(--code-black) 0%, var(--code-black-2) 100%);
     --btn-radius: 8px;
-    --btn-shadow: rgba(0, 0, 0, 0.76);
-    --btn-shadow-subtle: rgba(0, 0, 0, 0.26);
-    --btn-shadow-inner:  rgba(88,88,88,0.20);
     --default-transition: 0.4s ease;
+    --lightness-change: 150%;
+} */
+
+* {
+    transition: all 1.5s ease !important;
 }
+
+
+body {
+        --code-black: hsl(0, 0%, calc(var(--lightness-change) + 13%));
+        --code-black-2: hsla(0, 0%, calc(var(--lightness-change) + 22%), 0.8);
+        --code-black-3: hsl(0, 0%, calc(var(--lightness-change) + 13%));
+        --code-gray: hsl(0, 0%, calc(var(--lightness-change) + 16%));
+        /* --code-purple: hsl(265, 20%, 24%);
+        --code-studio: hsl(280, 46%, 45%); */
+        --code-border: hsla(0, 0%, calc(var(--lightness-change) + 100%), 0.24);
+        --code-light-bg: hsla(0, 0%, calc(var(--lightness-change) + 100%, 0.04));
+        --code-border-full: hsl(0, 0%, calc(var(--lightness-change) + 100%));
+        --code-text: hsl(0, 0%, 100% );
+        --code-light: hsl(0, 0%, 80% );
+        --btn-shadow: hsla(0, 0%, calc(var(--lightness-change) + 0%, 0.76));
+        --btn-shadow-subtle: hsla(0, 0%, 0%, 0.26);
+        --btn-shadow-inner:  hsla(0, 0%, 35%, 0.2);
+        --code-grad-black: linear-gradient(90deg, var(--code-black) 0%, var(--code-black-2) 100%);
+        --btn-radius: 8px;
+        --default-transition: 0.4s ease;
+        --lightness-change: 0%;
+}
+
+
+.see-the-light {
+     --code-text: hsl(0, 0%, 30% );
+     --lightness-change: 100%;
+} 
+
+
+
+
 
 @font-face {
     font-family: codeHubFont;
@@ -84,6 +122,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .inner_wrapper {

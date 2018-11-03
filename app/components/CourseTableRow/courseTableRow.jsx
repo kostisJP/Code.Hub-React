@@ -1,5 +1,4 @@
 import React from 'react';
-import {Button} from 'react-bootstrap';
 import "./CourseTableRow.css";
 
 const CourseTableRow = ({row}) =>{
@@ -16,9 +15,9 @@ const CourseTableRow = ({row}) =>{
             <td>{price} €</td>
             <td>{startDateFormatted} - {endDateFormatted}</td>
             <td>
-                <Button bsSize="xsmall" bsStyle="info" href={`/courses/${row.id}`}>
+                <a className="btn btn-float" href={`/courses/${row.id}`}>
                     View Details
-                </Button>
+                </a>
             </td>
         </tr>
     );

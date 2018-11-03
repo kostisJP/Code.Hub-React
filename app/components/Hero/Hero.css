@@ -14,3 +14,25 @@
     opacity: 0.5;
     font-size: 1.2em;
 }
+
+.grad_span {
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, rgb(241, 185, 129), rgb(238, 106, 85));
+    background-size: 200%;
+    background-position-x: 0%;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 12px 17px 0 rgba(0, 0, 0, 0.1);
+    animation: moveGrad 2s ease infinite;
+}
+
+@keyframes moveGrad {
+    0% {
+        background-position-x: 0%;
+    }
+    50% {
+        background-position-x: 100%;
+    }
+    100% {
+        background-position-x: 0%;
+    }
+}

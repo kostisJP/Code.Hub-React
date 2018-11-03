@@ -6,14 +6,13 @@ import "./CourseTable.css";
 const CourseTable = ({title, courses}) => {
     
     return (
-        <div className="row">
-        <div className="col-md-10 col-md-offset-1">
-            <Panel bsStyle="primary"> 
-                    <Panel.Heading>
-                        <Panel.Title componentClass="h4">{title}</Panel.Title>
-                    </Panel.Heading>
+        <div className="flex_wrapper">
+
+            <div className="panel_wrapper "> 
+                        <h4 className="panel_header stat_wrapper">{title}</h4>
                     <Panel.Body>
-                        <Table responsive striped bordered condensed hover>
+                        <table className="table_wrapper">
+                        <div className="table_inner_wrapper">
                         <thead>
                         <tr>
                             <th></th>
@@ -30,13 +29,13 @@ const CourseTable = ({title, courses}) => {
                                     return <CourseTableRow key={course.id} row={course}/>;
                             })}
                         </tbody>
-                        </Table>
+                        </div>
+                        </table>
                     </Panel.Body>
                     <Panel.Footer>
-                        <Button className="pull-right">view All</Button>
+                        <Button className="btn btn-float">view All</Button>
                     </Panel.Footer>
-                </Panel>
-        </div>
+                </div>
         </div>
         
     );
