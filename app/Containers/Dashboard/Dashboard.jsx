@@ -10,7 +10,8 @@ class Dashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      supertitle: "Welcome to Code.Hub Dashboard!",
+      supertitle: "Welcome to Dashboard!",
+      supergrad: "Code.hub",
       subtitle: "Manage everything and have fun!",
       courses: [],
       stats: []
@@ -30,7 +31,7 @@ class Dashboard extends React.Component {
     return (
 
       <div>
-        <Hero supertitle={this.state.supertitle} subtitle={this.state.subtitle} />
+        <Hero supertitle={this.state.supertitle} supergrad={this.state.supergrad} subtitle={this.state.subtitle} />
           <div className="stat_wrapper flex_wrapper inner_wrapper">
             {this.state.stats.map((item, index) => {
               return <StatItem key={item.id} title={this.capitalizeText(item.title)} count={item.amount} image={item.picture} />;
