@@ -5,14 +5,25 @@ import "./Header.css";
 
 
 const Header = () => {
+
+const bodyTheme = document.getElementById("theme_body");
+
+const LightTheme = () => { 
+    bodyTheme.classList.add('see-the-light');
+};
+
+const DarkTheme = () => { 
+    bodyTheme.classList.remove('see-the-light');
+};
+
 return (
 <div className="flex_wrapper nav_wrapper">
     <div className="inner_wrapper flex_wrapper">
         <div className="theme_panel">
             <h6>Choose Theme :</h6>
             <div className="theme_btns flex_wrapper">
-                <div className="theme_btn theme_white"></div>
-                <div className="theme_btn theme_black"></div>
+                <button onClick ={LightTheme} className="theme_btn theme_white"></button>
+                <button onClick ={DarkTheme} className="theme_btn theme_black"></button>
             </div>
         </div>
         <div className="flex_wrapper">

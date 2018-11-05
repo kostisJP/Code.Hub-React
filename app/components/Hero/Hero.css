@@ -3,6 +3,7 @@
     padding: 74px 40px 150px 40px;
     background-image: url(../../assets/images/hero_back_2.png);
     background-size: cover;
+    transition: background-color var(--large-transition);
 }
 
 .jumbotron h2 {
@@ -11,8 +12,10 @@
 }
 
 .jumbotron p {
+    color: var(--code-black);
     opacity: 0.5;
     font-size: 1.2em;
+    transition: color var(--large-transition);
 }
 
 .grad_span {
@@ -21,7 +24,6 @@
     background-size: 200%;
     background-position-x: 0%;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 12px 17px 0 rgba(0, 0, 0, 0.1);
     animation: moveGrad 2s ease infinite;
 }
 

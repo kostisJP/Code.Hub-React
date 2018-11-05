@@ -18,9 +18,11 @@
     --lightness-change: 150%;
 } */
 
-* {
-    transition: all 1.5s ease !important;
+input:focus {
+    outline:none !important;
 }
+
+button:focus {outline:0;}
 
 
 body {
@@ -28,30 +30,30 @@ body {
         --code-black-2: hsla(0, 0%, calc(var(--lightness-change) + 22%), 0.8);
         --code-black-3: hsl(0, 0%, calc(var(--lightness-change) + 13%));
         --code-gray: hsl(0, 0%, calc(var(--lightness-change) + 16%));
-        /* --code-purple: hsl(265, 20%, 24%);
-        --code-studio: hsl(280, 46%, 45%); */
+        --code-purple: hsl(265, 20%, 24%);
+        --code-studio: hsl(280, 46%, 45%);
         --code-border: hsla(0, 0%, calc(var(--lightness-change) + 100%), 0.24);
         --code-light-bg: hsla(0, 0%, calc(var(--lightness-change) + 100%, 0.04));
         --code-border-full: hsl(0, 0%, calc(var(--lightness-change) + 100%));
         --code-text: hsl(0, 0%, 100% );
         --code-light: hsl(0, 0%, 80% );
-        --btn-shadow: hsla(0, 0%, calc(var(--lightness-change) + 0%, 0.76));
+        --btn-shadow: hsla(0, 0%, calc(var(--lightness-change) + 0%), 0.76);
         --btn-shadow-subtle: hsla(0, 0%, 0%, 0.26);
+        --btn-shadow-large: hsla(0, 0%, 0%, 0.56);
         --btn-shadow-inner:  hsla(0, 0%, 35%, 0.2);
         --code-grad-black: linear-gradient(90deg, var(--code-black) 0%, var(--code-black-2) 100%);
         --btn-radius: 8px;
         --default-transition: 0.4s ease;
+        --large-transition: 0.7s ease;
+        --small-transition: 0.24s ease;
         --lightness-change: 0%;
 }
 
 
 .see-the-light {
      --code-text: hsl(0, 0%, 30% );
-     --lightness-change: 100%;
+     --lightness-change: 150%;
 } 
-
-
-
 
 
 @font-face {
@@ -66,26 +68,31 @@ h5,
 h6 {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: var(--code-text);
+    transition: color var(--large-transition);
 }
 
 body {
     background-color: var(--code-black);
+    transition: background-color var(--large-transition);
 }
 
 h1,
 h2 {
     font-family: 'Montserrat', sans-serif;
     color: var(--code-text);
+    transition: color var(--large-transition);
 }
 
 h1 {
     font-size: 1.9em;
     color: var(--code-text);
+    transition: color var(--large-transition);
 }
 
 h2 {
     font-size: 1.7em;
     color: var(--code-text);
+    transition: color var(--large-transition);
 }
 
 html,
@@ -105,11 +112,13 @@ table tbody tr td:nth-child(6) {
 a {
     text-decoration: none;
     color: var(--code-text);
+    transition: color var(--large-transition);
 }
 
 li {
     list-style: none;
     color: var(--code-text);
+    transition: color var(--large-transition);
 }
 
 html,
@@ -136,7 +145,7 @@ body {
     border-radius: var(--btn-radius);
     border: 2px solid var(--code-border);
     box-sizing: border-box;
-    transition: border-color var(--default-transition);
+    transition: all var(--large-transition);
 }
 
 .btn:hover {
@@ -145,12 +154,12 @@ body {
 }
 
 .btn-float {
-    box-shadow: 0 6px 26px 0 var(--btn-shadow);
+    box-shadow: 0 6px 26px 0 var(--btn-shadow-large);
     border: none;
-    transition: transform var(--default-transition), box-shadow var(--default-transition);
+    transition: all var(--large-transition);
 }
 
 .btn-float:hover {
     transform: translateX(6px);
-    box-shadow: 0 0px 6px var(--btn-shadow);
+    box-shadow: 0 2px 4px 0 var(--btn-shadow-large);
 }

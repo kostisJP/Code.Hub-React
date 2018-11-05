@@ -1,6 +1,6 @@
 .stat_wrapper {
     padding: 16px 0;
-    background: var(--code-grad-black);
+    background-color: var(--code-black);
     border-radius: 104px;
     box-sizing: border-box;
     box-shadow: 0 12px 28px 3px var(--btn-shadow-subtle), inset 0 2px 8px 0 var(--btn-shadow-inner);
@@ -9,4 +9,5 @@
     text-align: center;
     justify-content: space-around;
     position: relative;
+    transition: background-color var(--large-transition), box-shadow var(--large-transition), border-color var(--large-transition);
 }

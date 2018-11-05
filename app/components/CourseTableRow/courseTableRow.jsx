@@ -16,7 +16,7 @@ const CourseTableRow = ({row}) =>{
             <td>{startDateFormatted} - {endDateFormatted}</td>
             <td>
                 <a className="btn btn-float" href={`/courses/${row.id}`}>
-                    View Details
+                     Details
                 </a>
             </td>
         </tr>

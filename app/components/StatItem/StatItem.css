@@ -37,6 +37,7 @@
     left: 50%;
     transform: translate(-50%, -74%);
     box-shadow: inset 0 2px 2px 0 var(--btn-shadow-inner);
+    transition: background-color var(--large-transition), box-shadow var(--large-transition), border-color var(--large-transition);
 }
 
 .stat_ic_students {
