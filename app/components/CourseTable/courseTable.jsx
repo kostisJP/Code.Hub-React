@@ -12,7 +12,6 @@ const CourseTable = ({title, courses}) => {
                         <h4 className="panel_header stat_wrapper">{title}</h4>
                     <Panel.Body>
                         <table className="table_wrapper">
-                        <div className="table_inner_wrapper">
                         <thead>
                         <tr>
                             <th></th>
@@ -29,7 +28,7 @@ const CourseTable = ({title, courses}) => {
                                     return <CourseTableRow key={course.id} row={course}/>;
                             })}
                         </tbody>
-                        </div>
+                     
                         </table>
                     </Panel.Body>
                     <Panel.Footer>

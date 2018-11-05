@@ -1,6 +1,7 @@
 
 .nav_wrapper {
-    background: var(--code-grad-black);
+    background-color: var(--code-black);
+    transition: background-color var(--large-transition);
 }
 
 .nav_bar_logo {
@@ -9,7 +10,6 @@
 }
 
 .nav_bar_logo span {
-    /* font-family: "Roboto", Arial, Helvetica, sans-serif; */
     opacity: 0.3;
     font-weight: 900;
     font-size: 0.4em;
@@ -37,6 +37,7 @@
     transform: translate(-50%, 0);
     background-color: var(--code-black);
     box-shadow: 0 34px 44px 2px var(--btn-shadow-subtle);
+    transition: background-color var(--large-transition), box-shadow var(--large-transition);
 }
 
 .theme_panel:hover {
@@ -50,6 +51,7 @@
     font-size: 1em;
     color: var(--code-text);
     margin: 12px 0 6px 0;
+    transition: color var(--large-transition);
 }
 
 .theme_btn {
@@ -57,6 +59,9 @@
     height: 34px;
     border: 3px solid var(--code-text);
     border-radius: 100%;
+    cursor: pointer;
+    z-index: 10;
+    transition: border-color var(--large-transition);
 }
 
 .theme_btns {
