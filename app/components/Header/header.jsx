@@ -11,8 +11,8 @@ return (
         <div className="theme_panel">
             <h6>Choose Theme :</h6>
             <div className="theme_btns flex_wrapper">
-                <div className="theme_btn theme_white"></div>
-                <div className="theme_btn theme_black"></div>
+                <button className="theme_btn theme_white"></button>
+                <button className="theme_btn theme_black"></button>
             </div>
         </div>
         <div className="flex_wrapper">
