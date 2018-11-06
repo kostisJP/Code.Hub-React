@@ -17,3 +17,11 @@ img {
 .container {
     padding: 2px 16px;
 }
+
+.cardHeader {
+    margin: auto;
+    padding: 16px;
+    background-color: darkslategrey;
+    height: 100%;
+    color: white !important;    
+}

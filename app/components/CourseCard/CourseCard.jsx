@@ -22,6 +22,9 @@ const CourseCard = (props) => {
 
     return (
         <div className="card">
+            <div className="cardHeader">
+                {title}
+            </div>
             <img src={imagePath} alt="Course" />
             <div className="container">
                 <p>Price: {normal}&euro; | Bookable {open ? "✔" : "x"}</p>
