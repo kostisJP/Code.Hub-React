@@ -7,9 +7,11 @@ const CourseTableRow = ({row}) =>{
     const title = row.title;
     const price = row.price.normal;
     const bookable = row.open;
+    const thumb = row.thumbClass;
+    console.log(thumb);
     return(
         <tr>
-            <td>i</td>
+            <td className={thumb + "-thumb course-thumb"}></td>
             <td>{title}</td>
             <td>{bookable ? "✔" : "x"}</td>
             <td>{price} €</td>
@@ -23,3 +25,5 @@ const CourseTableRow = ({row}) =>{
     );
 };
 export default CourseTableRow;
+
+// {"stat_ic stat_ic_" + props.image} 

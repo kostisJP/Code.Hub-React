@@ -24,6 +24,9 @@ input:focus {
 
 button:focus {outline:0;}
 
+table {
+    border-spacing: 0;
+}
 
 body {
         --code-black: hsl(0, 0%, calc(var(--lightness-change) + 13%));
@@ -33,6 +36,7 @@ body {
         --code-purple: hsl(265, 20%, 24%);
         --code-studio: hsl(280, 46%, 45%);
         --code-border: hsla(0, 0%, calc(var(--lightness-change) + 100%), 0.24);
+        --code-backdrop: #252525;
         --code-light-bg: hsla(0, 0%, calc(var(--lightness-change) + 100%, 0.04));
         --code-border-full: hsl(0, 0%, calc(var(--lightness-change) + 100%));
         --code-text: hsl(0, 0%, 100% );
@@ -53,6 +57,7 @@ body {
 .see-the-light {
      --code-text: hsl(0, 0%, 30% );
      --lightness-change: 150%;
+     --code-backdrop: #F3F3F3;
 } 
 
 
@@ -103,10 +108,6 @@ body,
 
 .row {
     margin-bottom: 30px;
-}
-
-table tbody tr td:nth-child(6) {
-    float: right;
 }
 
 a {
@@ -162,4 +163,10 @@ body {
 .btn-float:hover {
     transform: translateX(6px);
     box-shadow: 0 2px 4px 0 var(--btn-shadow-large);
+}
+
+.btn-extreme {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1.1em;
 }

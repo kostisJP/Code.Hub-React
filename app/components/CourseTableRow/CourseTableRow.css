@@ -1,0 +1,30 @@
+.td-icon {
+    width: 80px;
+    height: auto;
+}
+
+.course-thumb {
+    background-image: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    background-size: 66%;
+    background-position: center;
+    background-color: var(--code-backdrop);
+}
+
+.ux-thumb {
+    background-image: url("../../assets/icons/ux.svg");
+}
+
+.scrum-thumb {
+    background-image: url("../../assets/icons/scrum.svg");
+}
+
+.analytics-thumb {
+    background-image: url("../../assets/icons/analytics.svg");
+}
+
+.react-thumb {
+    background-image: url("../../assets/icons/react.png");
+}

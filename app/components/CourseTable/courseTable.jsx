@@ -1,5 +1,4 @@
 import React from "react";
-import {Table,Button, Panel} from 'react-bootstrap';
 import CourseTableRow from '../CourseTableRow/CourseTableRow';
 import "./CourseTable.css";
 
@@ -10,7 +9,6 @@ const CourseTable = ({title, courses}) => {
 
             <div className="panel_wrapper "> 
                         <h4 className="panel_header stat_wrapper">{title}</h4>
-                    <Panel.Body>
                         <table className="table_wrapper">
                         <thead>
                         <tr>
@@ -30,10 +28,9 @@ const CourseTable = ({title, courses}) => {
                         </tbody>
                      
                         </table>
-                    </Panel.Body>
-                    <Panel.Footer>
-                        <Button className="btn btn-float">view All</Button>
-                    </Panel.Footer>
+                        <div className="btn-area">
+                         <a className="btn btn-float btn-extreme grad_span">View All Courses</a>
+                        </div>
                 </div>
         </div>
         

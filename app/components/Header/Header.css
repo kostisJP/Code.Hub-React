@@ -37,7 +37,7 @@
     transform: translate(-50%, 0);
     background-color: var(--code-black);
     box-shadow: 0 34px 44px 2px var(--btn-shadow-subtle);
-    transition: background-color var(--large-transition), box-shadow var(--large-transition);
+    transition: background-color var(--large-transition), box-shadow var(--large-transition), transform var(--large-transition);
 }
 
 .theme_panel:hover {
