@@ -28,3 +28,7 @@
 .react-thumb {
     background-image: url("../../assets/icons/react.png");
 }
+
+.row-btn {
+    background-color: var(--code-backdrop);
+}

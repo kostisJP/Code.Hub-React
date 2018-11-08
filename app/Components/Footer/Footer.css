@@ -1,0 +1,143 @@
+
+
+footer {
+    padding: 80px 40px;
+    background-color: var(--code-black);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: bolder;
+    transition: background-color var(--large-transition);
+    background-image: url("../../assets/images/rough_bg.png");
+    background-size: cover;
+}
+
+.made-with-wrapper {
+    display: inline-flex;
+}
+
+.team-footer {
+    margin-left: 10px;
+}
+
+.footer-text {
+    align-items: baseline !important; 
+}
+
+.footer-text span {
+    color: rgb(144,144,144, 0.6);
+    display: inline-block;
+}
+
+.react-footer {
+    width: 28px;
+    height: 28px;
+    display: block;
+    background-image: url("../../assets/icons/reactjs-ic.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px 14px;
+    position: relative;
+    top: 8px;
+    animation: spin 14s linear infinite;
+}
+
+.team-footer:hover {
+    cursor: pointer;
+}
+
+.team-pop {
+    position: absolute;
+    top: -180px;
+    right: -190px;
+    flex-direction: row;
+    border-radius: 24px;
+    opacity: 1;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+    transform: translateY(0) scale(1);
+    transition: all var(--large-transition);
+}
+
+.team-pop-hide {
+    opacity: 0;
+    transform: translateY(30px) scale(0);
+}
+
+.team-pop:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    background-color: var(--code-backdrop);
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    transform: translate(0px -50px);
+    z-index: 0;
+    transition: background-color var(--large-transition);
+}
+ 
+.team-member:nth-child(1){
+border-radius: 24px 0 0 24px;
+} 
+
+.team-member:nth-child(3) {
+    border-radius: 0px 24px 24px 0px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 90px;
+    width: 100%;
+    padding: 18px 26px;
+    background-color: var(--code-backdrop);
+    transition: filter 1s ease, background-color var(--large-transition);
+}
+
+.team-bill {
+    background-image: url("../../assets/images/bill-sq.jpg");
+    background-size: cover;
+}
+
+.team-alex {
+    background-image: url("../../assets/images/alex-sq.jpg");
+    background-size: cover;
+}
+
+.team-kostas {
+    background-image: url("../../assets/images/kostas-sq.jpg");
+    background-size: cover;
+}
+
+.team-member:hover {
+    filter: brightness(107%);
+}
+
+.team-avatar {
+    border: 4px solid var(--code-black);
+    box-sizing: border-box;
+    width: 78px;
+    height: 78px;
+    display: block;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    background-color: red;
+    transition: border-color var(--large-transition);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

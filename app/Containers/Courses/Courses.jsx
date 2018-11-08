@@ -17,10 +17,12 @@ class Courses extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>Courses <span style={{color: "grey", fontSize: 16}}>(all)</span></h2>        
+      <div className="inner_wrapper">
+        <h2>Courses <span style={{color: "grey", fontSize: 16}}>(all)</span></h2>     
+        <div className="flex_wrapper card_wrapper">   
         {this.state.courses.map(course=>
           <CourseCard key={course.id} {...course} />)}
+        </div>
       </div>
     );
   }

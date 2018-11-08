@@ -1,0 +1,7 @@
+.card_wrapper {
+    flex-wrap: wrap;
+    align-items: baseline;
+    perspective: 1100px;
+    perspective-origin: top;
+    transform-style: preserve-3d;
+}

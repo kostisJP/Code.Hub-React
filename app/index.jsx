@@ -7,13 +7,16 @@ import Course from "./Containers/Course/Course";
 import AddNewCourse from "./Containers/AddNewCourse/AddNewCourse";
 import NotFound from "./Components/NotFound/NotFound";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/footer";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Grid } from "react-bootstrap";
+import ThemeSwitcher from "./components/ThemeSwitcher/themeSwitcher";
 
 ReactDOM.render(
   <BrowserRouter>
     <>
       <Header />
+      <ThemeSwitcher/>
       <Grid>
         <Switch>
           <Route exact path="/" component={Dashboard} />
@@ -23,6 +26,7 @@ ReactDOM.render(
           <Route path="*" component={NotFound} />
         </Switch>
       </Grid>
+      <Footer/>
     </>
   </BrowserRouter>,
   document.getElementById("app")

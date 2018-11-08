@@ -1,27 +1,168 @@
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
     width: 40%;
-    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 var(--btn-shadow-large);
+    border-radius: 14px;
+    width: 46%;
+    will-change: transform;
+    transform-origin: top;
+    margin-bottom: 120px;
+    margin-top: 90px;
+    position: relative;
+    background-color: var(--code-black);
+    transition: all var(--large-transition);
+    filter: grayscale(100%);
+    animation: lightup 2s ease 1.4s forwards;
 }
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.card:before {
+    content: "";
+    width: 102%;
+    height: 101.4%;
+    border-radius: 18px;
+    background-image: linear-gradient(to right, rgb(241, 185, 129), rgb(238, 106, 85));
+    position: absolute;
+    top: -0.7%;
+    left: -1%;
+    z-index: -1;
+    transition: transform var(--large-transition);
+    transform-origin: center;
 }
 
-img {
-    border-radius: 5px 5px 0 0;
+.card:after {
+    content: "";
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -2;
+    transform: translate(-50%, -20%);
+    background-color: var(--code-black);
+    box-shadow: -4px 0px 16px 0 var(--btn-shadow-subtle);
+    border: 3px solid var(--code-backdrop);
+    box-sizing: border-box;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all var(--large-transition);
+}
+
+.card:nth-child(even):hover {
+    box-shadow: 32px 10px 56px 8px var(--btn-shadow-subtle);
+    transform: rotateY(-2deg) scale(0.98) translateZ(18px);
+}
+
+
+.card:nth-child(odd):hover {
+    box-shadow: -32px 10px 56px 8px var(--btn-shadow-subtle);
+    transform: rotateY(2deg) scale(0.98) translateZ(18px);
+}
+
+.card:hover:before {
+    transform-origin: center;
+}
+
+.card:nth-child(even):hover:after {
+    box-shadow: 12px 12px 26px 0px var(--btn-shadow-subtle);
+    transform-origin: center;
+    transform: translate(-50%, -110%);
+}
+
+.card:nth-child(odd):hover:after {
+    box-shadow: -12px 12px 26px 0px var(--btn-shadow-subtle);
+    transform-origin: center;
+    transform: translate(-50%, -110%);
+}
+
+.card:hover .card-image-wrapper:after {
+    transform: skewY(20deg) skewX(-3deg) scale(2.8) translateX(300px);
+}
+
+.courses-btn:hover {
+    transform: translate(-50%, 50%);
+}
+
+.bg-01:after {
+    background-image: url(../../assets/icons/scrum.svg);
+}
+
+.bg-02:after {
+    background-image: url(../../assets/icons/ux.svg);
+}
+
+.bg-03:after {
+    background-image: url(../../assets/icons/analytics.svg);
+}
+
+.bg-04:after {
+    background-image: url(../../assets/icons/reactjs-ic.svg);
+}
+
+.card-image {
     width: 100%;
+    height: 400px;
+    transition: all var(--large-transition);
 }
-/* 
-.container {
-    padding: 2px 16px;
-} */
+
+.card-image-wrapper {
+    overflow: hidden;
+}
+
+.card-image-wrapper:after {
+    content: "";
+    transform: skewY(20deg) skewX(-3deg) scale(1.1) translateX(-100px) translateY(0);
+    background-color: rgba(255,255,255,0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 3;
+    opacity: 0.2;
+    transition: transform 0.8s ease;
+    transform-origin: bottom;
+}
+
+
+.card-container {
+    padding: 16px 20px 36px 20px;
+    box-sizing: border-box;
+    border-radius: 0 0 14px 14px;
+    background-color: var(--code-black);
+    background-image: url("../../assets/images/soft_bg.png");
+    background-size: 36%;
+    transition: background-color var(--large-transition);
+}
 
 .cardHeader {
     margin: auto;
-    padding: 16px;
-    background-color: darkslategrey;
+    padding: 26px;
+    background-color: var(--code-black);
     height: 100%;
-    color: white !important;    
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--code-text) !important;    
+    border-radius: 14px 14px 0 0;
+    font-weight: 900;
+    transition: all var(--large-transition);
+}
+
+.courses-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+
+@keyframes lightup {
+    from {
+        filter: grayscale(100%);
+    }
+    to {
+        filter: grayscale(0%);
+    }
 }

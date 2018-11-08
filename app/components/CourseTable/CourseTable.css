@@ -15,8 +15,11 @@ position: relative;
     border-spacing: none !important;
     border-collapse: none;
     padding-top: 10px;
-    background-color: var(--code-black);
-    transition: background-color var(--large-transition);
+    background-color: var(--code-backdrop);
+    transition: all var(--large-transition);
+    padding-bottom: 20px;
+    border-radius: 0 0 40px 40px;
+    overflow: hidden;
 }
 
 .panel_header {
@@ -34,6 +37,8 @@ th, td {
     box-sizing: border-box;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    color: var(--code-text);
+    transition: background-color var(--large-transition), border var(--large-transition), color var(--large-transition);
 }
 
 th {
@@ -42,7 +47,6 @@ th {
     padding-top: 45px;
     font-size: 1.12em;
     font-weight: 900;
-    transition: background-color var(--large-transition);
 }
 
 td {
@@ -51,10 +55,13 @@ td {
     box-sizing: border-box;
     font-weight: 400;
     background-color: var(--code-black);
-    transition: background-color var(--large-transition), border var(--large-transition);
 }
 
 .btn-area {
-    padding: 40px;
+    padding: 30px 0 10px 0;
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    text-align: center;
 }
 

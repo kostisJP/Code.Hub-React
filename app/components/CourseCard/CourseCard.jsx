@@ -21,16 +21,18 @@ const CourseCard = (props) => {
     } = props;
 
     return (
-        <div className="card">
+        <div className={"card card-ic bg-" + id}>
             <div className="cardHeader">
                 {title}
             </div>
-            <img src={imagePath} alt="Course" />
-            <div className="container">
+            <div class="card-image-wrapper flex_wrapper">
+            <img className="card-image" src={imagePath} alt="Course" />
+            </div>
+            <div className="card-container">
                 <p>Price: {normal}&euro; | Bookable {open ? "✔" : "x"}</p>
                 <p>Duration: {duration}</p> 
                 <p>Dates: {startDate} - {endDate}</p> 
-                <a className="btn btn-float" href={`/courses/${id}`}>
+                <a className="btn btn-float courses-btn" href={`/courses/${id}`}>
                      Details
                 </a>
             </div>

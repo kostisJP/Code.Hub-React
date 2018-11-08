@@ -36,7 +36,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -74%);
-    box-shadow: inset 0 2px 2px 0 var(--btn-shadow-inner);
+    box-shadow: inset 0 var(--shadow-bump) 2px 0 var(--btn-shadow-inner), 0 2px 4px var(--btn-shadow-subtle);
     transition: background-color var(--large-transition), box-shadow var(--large-transition), border-color var(--large-transition);
 }
 

@@ -5,7 +5,7 @@ import "./CourseTable.css";
 const CourseTable = ({title, courses}) => {
     
     return (
-        <div className="flex_wrapper">
+        <div>
 
             <div className="panel_wrapper "> 
                         <h4 className="panel_header stat_wrapper">{title}</h4>
@@ -28,10 +28,11 @@ const CourseTable = ({title, courses}) => {
                         </tbody>
                      
                         </table>
-                        <div className="btn-area">
-                         <a className="btn btn-float btn-extreme grad_span">View All Courses</a>
-                        </div>
+                     
                 </div>
+                <div className="btn-area">
+                         <a  href="/courses" className="btn btn-float btn-extreme grad_span">View All Courses</a>
+                        </div>
         </div>
         
     );
