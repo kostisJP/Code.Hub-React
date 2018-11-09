@@ -55,8 +55,9 @@ class CourseForm extends Component {
 
             // define some special cases
             if (name == "open") {
+                debugger;
                 // toggle open
-                value = !oldState.course.open
+                value = !oldState.course.open;
             }
 
             if (name == "start_date") {
@@ -116,8 +117,9 @@ class CourseForm extends Component {
 
     handleCourseSubmission = event => {
         event.preventDefault();
-        console.log(this.state.course);
+        //console.log(this.state.course);
         this.props.handleCourse(this.state.course);
+        this.setState({course:null});
     };
 
     async componentDidMount() {
@@ -160,7 +162,7 @@ class CourseForm extends Component {
                         name="open"
                         checked={this.state.course.open}
                         onChange={this.handleInputFieldChange}
-                        id="bookable"
+                        
                     />
                     <label className="no-margin" htmlFor="bookable">Bookable</label>
                 </div>
