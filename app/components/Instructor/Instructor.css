@@ -1,0 +1,23 @@
+.instructors-wrapper {
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1em;
+    font-weight: 900;
+    color: var(--code-text);
+}
+
+.instructors-wrapper div {
+    margin-bottom: 12px;
+}
+
+.bio {
+    opacity: 0.7;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.underline_me {
+    text-decoration: underline;
+    transition: color var(--code-text);
+}

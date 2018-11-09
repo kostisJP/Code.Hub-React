@@ -6,7 +6,7 @@ const CourseDetails = (props) => {
     const {
         id,
         title,
-        imagePath,
+        imageCover,
         price: {
             normal,
             early_bird
@@ -22,25 +22,24 @@ const CourseDetails = (props) => {
      
     return (  
         
-        <div className="row">
-            <div className="col-md-12">
-                <h2>{title} <span style={{color: "grey", fontSize: 16}}>({id})</span></h2>
+        <div className="course_details">
+            <div>
+                <h2 className={"inner_wrapper course_single_header bg-"+props.id}>{title} <span style={{color: "grey", fontSize: 16}}>({id})</span></h2>
+                <div className="svg_notch"></div>
                 <div>
-                    <img src={imagePath} className="img-responsive" style={{objectFit: "cover"}} />
+                    <img className="cover-image" src={imageCover} style={{objectFit: "cover"}} />
                 </div>
             </div>
-            <div className="col-md-6">
-                <p>Price: {normal}</p>
-                <p>Bookable: {open ? "✔" : "x"}</p>
-            </div>
-            <div className="col-md-6">
-                <p>Duration: {duration}</p>
-                <p>Dates: {startDate} - {endDate}</p>
-            </div>            
-            <div className="col-md-12" dangerouslySetInnerHTML={{ __html: description} } />            
-            <div>
-                <button className="btn btn-primary">Edit</button> &nbsp;
-                <button className="btn btn-danger">Delete</button>
+            <div className="inner_wrapper_2 flex_wrapper stat_wrapper">
+                <p className="course-para"><i className="course-icons icon-price"></i><span className="course-bold">Price :  </span> {normal}</p>
+                <p className="course-para"><i className="course-icons icon-bookable"></i><span className="course-bold">Bookable :  </span> {open ? "✔" : "x"}</p>
+                <p className="course-para"><i className="course-icons icon-duration"></i><span className="course-bold">Duration :  </span> {duration}</p>
+                <p className="course-para"><i className="course-icons icon-dates"></i><span className="course-bold">Dates :  </span> {startDate} - {endDate}</p>
+            </div>           
+            <div className="inner_wrapper course-desc" dangerouslySetInnerHTML={{ __html: description} } />            
+            <div className="inner_wrapper">
+                <a className="btn btn-float">Edit</a> &nbsp;
+                <a className="btn btn-float btn-delete">Delete</a>
             </div>
         </div>
     );

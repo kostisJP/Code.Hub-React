@@ -13,14 +13,10 @@ return (
             <img className="logo" src={Logo}></img>
             <Link to="/" className="nav_bar_logo">Code.Hub <span> Dashboard </span></Link>
         </div>
-        <ul className="flex_wrapper">
-            <li className="btn">
-                <a href="/courses">Courses</a>
-            </li>
-            <li className="btn btn-float">
-                <a href="/add-course">Add New Course</a>
-            </li>
-        </ul>
+        <div className="flex_wrapper">
+            <a href="/courses" className="btn">Courses</a>
+            <a href="/add-course" className="btn btn-float">Add New Course</a>
+        </div>
     </div>
 </div>
 );

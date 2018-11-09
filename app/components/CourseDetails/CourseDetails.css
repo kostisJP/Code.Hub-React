@@ -1,0 +1,118 @@
+.cover-image {
+    object-fit: cover;
+    width: 100%;
+    height: 460px;
+}
+
+.course_single_header {
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: left;
+    box-sizing: border-box;
+    padding-right: 640px;
+    position: relative;
+}
+
+
+.course_details {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1em;
+    position: relative;
+}
+
+.course-desc {
+    padding: 32px 40px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    background-color: var(--code-backdrop);
+    transition: background-color var(--large-transition);
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 50px;
+}
+
+.course_single_header:after {
+    content: "";
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, 50%);
+    background-color: var(--code-black);
+    box-shadow: -4px 0px 16px 0 var(--btn-shadow-subtle);
+    border: 3px solid var(--code-backdrop);
+    box-sizing: border-box;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all var(--large-transition);
+}
+
+.svg_notch {
+    width: 290px;
+    height: 290px;
+    background-image: url("../../assets/images/notch.svg");
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    transform: translateX(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.inner_wrapper_2 {
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.btn-delete {
+    color: white;
+    margin-left: 20px;
+    background-image: linear-gradient( 111.3deg,  rgba(252,56,56,1) 11.7%, rgba(237,13,81,1) 81.7% );
+}
+
+.course-bold {
+    font-weight: 900;
+    opacity: 0.7;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.course-icons {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin-right: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.icon-price {
+    background-image: url("../../assets/icons/price-ic.svg");
+}
+
+
+.icon-bookable {
+    background-image: url("../../assets/icons/bookable-ic.svg");
+}
+
+.icon-duration {
+    background-image: url("../../assets/icons/duration-ic.svg");
+}
+
+.icon-dates {
+    background-image: url("../../assets/icons/dates-ic.svg");
+}
+
+
+
+.course-para {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px 0;
+}

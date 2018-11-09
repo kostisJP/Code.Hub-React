@@ -32,9 +32,11 @@ class Course extends Component {
         <CourseDetails           
           {...this.state.course}
         />
-        <h3>Instructors</h3>
-        {this.state.instructors.map(instructor=>
-          <Instructor key={instructor.id} {...instructor} />)}        
+        <div className="inner_wrapper">
+          <h3 className="header-backdrop">Instructors</h3>
+          {this.state.instructors.map(instructor=>
+            <Instructor key={instructor.id} {...instructor} />)}  
+        </div>      
       </div>
     );
   }

@@ -42,7 +42,7 @@ body {
 
 .see-the-light {
      --code-text: hsl(0, 0%, 30% );
-     --lightness-change: 150%;
+     --lightness-change: 85%;
      --code-backdrop: #F3F3F3;
      --code-border: hsla(0, 0%, 20%, 0.24);
      --code-border-full: hsl(0, 0%, calc(var(--lightness-change) - 100%));
@@ -161,4 +161,15 @@ body {
     font-weight: 900;
     font-size: 1.2em;
     padding: 20px 36px;
+}
+
+.header-backdrop {
+    font-weight: 900;
+    font-size: 1.4em;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 0 20px 40px;
+    background-color: var(--code-backdrop);
+    border-radius: 64px;
+    margin-top: 50px;
+    transition: background-color var(--large-transition);
 }

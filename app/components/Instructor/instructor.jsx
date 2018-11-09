@@ -14,10 +14,10 @@ const Instructor = (props) => {
     } = props;
 
     return (
-        <div>
+        <div className="instructors-wrapper">
             <div>{firstname} {lastname} <span style={{color: "grey", fontSize: 10}}>({dob})</span></div>
-            <div>Email: <a href={`mailto:${email}`}>{email}</a> | <a href={linkedin}>LinkedIn</a></div>
-            <div>{bio}</div>
+            <div>Email: <a className="underline_me" href={`mailto:${email}`}>{email}</a> | <a href={linkedin}>LinkedIn</a></div>
+            <div className="bio">{bio}</div>
             <br />
         </div>
     );

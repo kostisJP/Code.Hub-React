@@ -10,6 +10,8 @@
     position: relative;
     background-color: var(--code-black);
     transition: all var(--large-transition);
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
 .card:before {
@@ -99,7 +101,9 @@
 
 .card-image {
     width: 100%;
-    height: 400px;
+    height: 380px;
+    object-fit: cover;
+    object-position: top left;
     transition: all var(--large-transition);
 }
 
