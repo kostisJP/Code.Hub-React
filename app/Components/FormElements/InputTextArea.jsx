@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const InputTextArea = (props) => {
   return (
-    <fieldset>
+    <fieldset className="field-area">
       <label htmlFor={props.name}>{props.placeholder}</label>
       <textarea
         name={props.name}

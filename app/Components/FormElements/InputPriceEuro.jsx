@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const InputPriceEuro = (props) => {
   return (
-    <div>
+    <div className="margin_bottom">
       <label for={props.placeholder}>{props.placeholder}</label>
       <input
         type="text"

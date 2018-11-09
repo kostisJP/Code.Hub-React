@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const InputText = (props) => {
   return (
     <fieldset>
-      <label htmlFor={props.name}>{props.placeholder}</label>
+      <label htmlFor={props.name}>{props.name}</label>
       <input
         type="text"
         name={props.name}

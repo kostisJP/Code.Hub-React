@@ -10,7 +10,7 @@ class AddNewCourse extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="inner_wrapper">
         <h2>Add Course</h2>
         <CourseForm mode="add"></CourseForm>
         </div>

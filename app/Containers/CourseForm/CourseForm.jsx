@@ -135,27 +135,26 @@ class CourseForm extends Component {
             <form onSubmit={this.handleCourseSubmission}>
                 <InputText
                     name="title"
-                    placeholder="Course Title"
+                    placeholder="ex: React Course"
                     value={this.state.course.title}
                     onChange={this.handleInputFieldChange}
                 />
 
                 <InputText
                     name="duration"
-                    placeholder="Course Duration"
+                    placeholder="ex: 1 week"
                     value={this.state.course.duration}
                     onChange={this.handleInputFieldChange}
                 />
 
                 <InputText
                     name="imagePath"
-                    placeholder="Image Path"
+                    placeholder="ex: https://tinyurl.com/react.jpg"
                     value={this.state.course.imagePath}
                     onChange={this.handleInputFieldChange}
                 />
 
-                <div>
-                    <h5>Bookable</h5>
+                <div className="flex_wrapper max_wrapper">
                     <input
                         type="checkbox"
                         name="open"
@@ -163,7 +162,7 @@ class CourseForm extends Component {
                         onChange={this.handleInputFieldChange}
                         id="bookable"
                     />
-                    <label htmlFor="bookable">Bookable</label>
+                    <label className="no-margin" htmlFor="bookable">Bookable</label>
                 </div>
 
                 <CheckBoxGroup
@@ -174,9 +173,10 @@ class CourseForm extends Component {
                     onChange={this.handleInstructorsChange}
                 />
 
+                <h5>Project Description</h5>
                 <InputTextArea
                     name="description"
-                    placeholder="Description"
+                    placeholder="ex: This is a project about react"
                     value={this.state.course.description}
                     onChange={this.handleInputFieldChange}
                 />
@@ -211,7 +211,7 @@ class CourseForm extends Component {
                     onChange={this.handleInputFieldChange}
                 />
                 <div>
-                    <button type="submit">
+                    <button className="btn btn-float btn-extreme grad_span btn-margin" type="submit">
                         {this.props.mode == "add" ? "Add Course" : "Edit Course"}
                     </button>
                 </div>

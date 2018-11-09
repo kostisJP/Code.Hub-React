@@ -10,8 +10,6 @@
     position: relative;
     background-color: var(--code-black);
     transition: all var(--large-transition);
-    filter: grayscale(100%);
-    animation: lightup 2s ease 1.4s forwards;
 }
 
 .card:before {
@@ -154,15 +152,4 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
-}
-
-
-
-@keyframes lightup {
-    from {
-        filter: grayscale(100%);
-    }
-    to {
-        filter: grayscale(0%);
-    }
 }

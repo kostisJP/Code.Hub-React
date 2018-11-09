@@ -1,0 +1,105 @@
+
+form input {
+    display: block;
+    padding: 14px;
+    background-color: var(--code-backdrop);
+    border: none;
+    color: var(--code-text);
+    border: 2px solid var(--code-text);
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1em;
+    transition: all var(--large-transition);
+}
+
+form label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1em;
+    font-weight: 900;
+}
+
+.margin_bottom {
+    margin-bottom: 20px;
+}
+
+.btn-margin {
+    margin: 40px 0;
+}
+
+form h5 {
+    font-weight: 900;
+    font-size: 1.4em;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 0 20px 40px;
+    background-color: var(--code-backdrop);
+    border-radius: 64px;
+    transition: background-color var(--large-transition);
+}
+
+.field-area {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: inset 0 14px 124px 2px var(--btn-shadow-subtle);
+    background-image: url("../../assets/images/soft_bg.png");
+    background-color: var(--code-black);
+    border: none;
+    padding: 40px;
+    box-sizing: border-box;
+    color: var(--code-text);
+    font-size: 1.1em;
+    transition: color var(--large-transition), background-color var(--large-transition);
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+#early_bird, #normal {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.inline-block {
+    display: inline-block;
+    margin-right: 16px;
+    position: relative;
+    top: -3px;
+}
+
+.margin_wrapper {
+    margin-right: 20px;
+}
+
+.max_wrapper {
+    max-width: 120px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.flex_start {
+    justify-content: flex-start;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+::placeholder {
+    font-size: 0.9em;
+    font-family: "Montserrat", sans-serif;
+    opacity: 0.4;
+}
+
+fieldset {
+    border: none;
+    display: inline-block;
+    box-sizing: border-box;
+}
