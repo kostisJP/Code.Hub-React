@@ -2,7 +2,7 @@
   "name": "dashboard",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://kostisJP.github.io/codehub-react",
+  "homepage": "https://kostisjp.github.io/Code.Hub-React/",
   "main": "index.js",
   "scripts": {
     "api": "json-server db.json",
