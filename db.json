@@ -89,6 +89,27 @@
         "02"
       ],
       "description": "<p>This is a certified program by <strong>Athens Tech College</strong>, the first educational institution in Greece that specialises in <strong>computer science</strong> and ICT studies.</p><p>Participant’s registration (payment’s completion) implies full compliance and acceptance οf Code.Learn – Terms &amp; Conditions.</p>"
+    },
+    {
+      "id": "04",
+      "title": "React",
+      "thumbClass": "react",
+      "imagePath": "https://www.codehub.gr/wp-content/uploads/2018/01/React_FB_Post_1200x1200_a.jpg",
+      "imageCover": "https://dsc.cloud/sae/react-course.jpg",
+      "price": {
+        "normal": 500,
+        "early_bird": 450
+      },
+      "dates": {
+        "start_date": "2018-10-19",
+        "end_date": "2018-10-10"
+      },
+      "duration": "2 Fridays and 4 Saturdays",
+      "open": true,
+      "instructors": [
+        "01"
+      ],
+      "description": "<p>This is a certified program by Athens Tech College, the first educational institution in Greece that specialises in computer science and ICT studies.</p><p>Participant’s registration (payment’s completion) implies full compliance and acceptance of Code.Learn Terms &amp; Conditions.</p>"
     }
   ],
   "instructors": [
