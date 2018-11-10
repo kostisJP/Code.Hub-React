@@ -38,8 +38,8 @@ const CourseDetails = (props) => {
             </div>           
             <div className="inner_wrapper course-desc" dangerouslySetInnerHTML={{ __html: description} } />            
             <div className="inner_wrapper">
-                <a className="btn btn-float">Edit</a> &nbsp;
-                <a className="btn btn-float btn-delete">Delete</a>
+                <a className="btn btn-float" onClick={props.handleEdit}>Edit</a> &nbsp;
+                <a className="btn btn-float btn-delete" onClick={props.handleDelete}>Delete</a>
             </div>
         </div>
     );

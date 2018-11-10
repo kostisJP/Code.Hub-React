@@ -12,6 +12,7 @@ export const getDashboardStats = () => getData("/stats");
 export const getInstructors = () => getData("/instructors");
 export const getCourseById = (id) => getData(`/courses/${id}`);
 export const addCourse = (data) => axios.post(`${BASE_URL}/courses`, data);
+export const deleteCourse = (id)=> axios.delete(`${BASE_URL}/courses/${id}`);
 
 export const getCourseInstructors = (instructorId) => {
   return getData("/instructors").then(instructors => {   

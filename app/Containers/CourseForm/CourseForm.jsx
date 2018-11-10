@@ -115,7 +115,7 @@ class CourseForm extends Component {
         });
     };
 
-    handleCourseSubmission = event => {
+    onHandleCourse = (event) => {
         event.preventDefault();
         //console.log(this.state.course);
         this.props.handleCourse(this.state.course);
@@ -134,7 +134,7 @@ class CourseForm extends Component {
         const mode = this.props.mode;
 
         return (
-            <form onSubmit={this.handleCourseSubmission}>
+            <form onSubmit={this.onHandleCourse}>
                 <InputText
                     name="title"
                     placeholder="ex: React Course"
