@@ -29,7 +29,9 @@
     {
       "id": "01",
       "title": "Certified Scrum Master®",
+      "thumbClass": "scrum",
       "imagePath": "https://www.codehub.gr/wp-content/uploads/2018/04/ScrumMaster_FB_Post_1200x1200.jpg",
+      "imageCover": "https://dsc.cloud/sae/scrum-course.jpg",
       "price": {
         "normal": 1100,
         "early_bird": null
@@ -48,7 +50,9 @@
     {
       "id": "02",
       "title": "User eXperience (UX) Research",
+      "thumbClass": "ux",
       "imagePath": "https://www.codehub.gr/wp-content/uploads/2018/01/UI-UX_FB_Post_1200x1200.jpg",
+      "imageCover": "https://dsc.cloud/sae/ux-course.jpg",
       "price": {
         "normal": 500,
         "early_bird": 450
@@ -68,7 +72,9 @@
     {
       "id": "03",
       "title": "Advanced Analytics",
+      "thumbClass": "analytics",
       "imagePath": "https://www.codehub.gr/wp-content/uploads/2018/07/AdvancedAnalytics_1200x628.jpg",
+      "imageCover": "https://dsc.cloud/sae/analytics-course.jpg",
       "price": {
         "normal": 450,
         "early_bird": 400
